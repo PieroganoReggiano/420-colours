@@ -37,6 +37,7 @@ g++ -o 420-colours --std=c++17 -lfmt -lGL -lGLEW -lSDL2 main.cpp
 * SDL2
 * GLEW
 * {fmt}
+* glm
 
 # :>
 
