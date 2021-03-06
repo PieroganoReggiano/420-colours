@@ -73,7 +73,7 @@ void load_shaders() {
   if (!status) {
     GLint d = 0;
     glGetShaderiv(vsh, GL_INFO_LOG_LENGTH, &d);
-    std::string s(' ', d);
+    std::string s(d, ' ');
     glGetShaderInfoLog(vsh, d, &d, s.data());
     auto msg = fmt::format("Vertex shader: {}", s);
     throw std::runtime_error(msg);
@@ -87,7 +87,7 @@ void load_shaders() {
   if(!status) {
     GLint d = 0;
     glGetShaderiv(fsh, GL_INFO_LOG_LENGTH, &d);
-    std::string s(' ', d);
+    std::string s(d, ' ');
     glGetShaderInfoLog(fsh, d, &d, s.data());
     auto msg = fmt::format("Fragment shader: {}", s);
     throw std::runtime_error(msg);
@@ -103,7 +103,7 @@ void load_shaders() {
   {
     GLint d = 0;
     glGetProgramiv(shp, GL_INFO_LOG_LENGTH, &d);
-    std::string s(' ', d);
+    std::string s(d, ' ');
     glGetProgramInfoLog(shp, d, &d, s.data());
     auto msg = fmt::format("Program: {}", s);
     throw std::runtime_error(msg);
