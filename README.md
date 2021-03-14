@@ -17,7 +17,10 @@ S -- stop generation and start colouring
 
 E -- switch colours to some weird raindow and vice versa
 
-Alt+F4 or some other quit signal from window -- you won't guess -> it will close the program
+Space -- pause
+
+Alt+F4 or some other quit signal from window -- you won't guess -> it will close
+the program
 
 # Compilation
 
@@ -38,6 +41,18 @@ g++ -o 420-colours --std=c++17 -lfmt -lGL -lGLEW -lSDL2 main.cpp
 * GLEW
 * {fmt}
 * glm
+
+# Performance
+
+This program has poor performance, because it was only quick attempt to make
+some BEAUTIFUL animation in C++ (OpenGL is here only to display a texture).
+
+# Screenshots
+
+![Screenshot 1](sc1.png?raw=true)
+![Screenshot 2](sc2.png?raw=true)
+![Screenshot 3](sc3.png?raw=true)
+![Screenshot 4](sc4.png?raw=true)
 
 # :>
 
